@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Media by Date</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="search-container">
+            <input type="date" id="dateInput" placeholder="Select date...">
+            <button type="button" id="searchBtn">Search</button>
+        </div>
+        <div class="home-btn" id="homeBtn">Home</div>
+        <div class="refresh-btn" id="refreshBtn">Refresh</div>
+        <div class="menu-toggle" id="menuToggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu-options" id="menuOptions">
+            <li><a href="#" id="videosBtn">Videos</a></li>
+            <li><a href="#" id="audiosBtn">Audios</a></li>
+            <li><a href="#" id="photosBtn">Photos</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="photo-grid" id="photoGrid">
+            <!-- Media items will be displayed here -->
+        </div>
+    </div>
+    <div class="upload-container">
+        <input type="file" id="fileInput" multiple>
+        <button type="button" id="uploadBtn">Upload Files</button>
+    </div>
+    <div class="photo-grid" id="photoGrid">
+        <!-- Photo, video, and audio containers will be dynamically created here -->
+    </div>
+    
+        
+    <script src="script2.js"></script>
+</body>
+</html>
